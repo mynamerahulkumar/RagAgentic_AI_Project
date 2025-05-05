@@ -10,6 +10,14 @@ pip install -r requirements.txt
 
 
 
+#Groq key
+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
+
+#Tavis api key
+
+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
+
+
 
 
 

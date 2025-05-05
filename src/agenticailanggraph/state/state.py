@@ -6,6 +6,6 @@ from langchain_core.messages import HumanMessage, AIMessage
 
 class State(TypedDict):
     """
-        Represents the structure of the state used in the graph.
+    Represents the structure of the state used in the graph.
     """
-    messages:Annotated[list,add_messages]
+    messages: Annotated[list, add_messages]

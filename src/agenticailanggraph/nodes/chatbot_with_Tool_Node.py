@@ -2,12 +2,11 @@ from src.agenticailanggraph.state.state import State
 
 class ChatbotWithToolNode:
     """
-    Chatbot logic enhanced with tool integration
+    Chatbot logic enhanced with tool integration.
     """
     def __init__(self,model):
-        self.llm=model
-        
-        
+        self.llm = model
+
     def process(self, state: State) -> dict:
         """
         Processes the input state and generates a response with tool integration.
@@ -33,3 +32,12 @@ class ChatbotWithToolNode:
             return {"messages": [llm_with_tools.invoke(state["messages"])]}
 
         return chatbot_node
+ 
+        
+
+        
+    
+    
+    
+    
+    
