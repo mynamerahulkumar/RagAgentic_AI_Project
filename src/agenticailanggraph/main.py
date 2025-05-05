@@ -2,7 +2,7 @@ import streamlit as st
 
 import json 
 
-from src.agenticailanggraph.frontend.streamlitui.loadfronend import LoadStreamLitFrontend
+from src.agenticailanggraph.frontend.streamlitui.loadfrontend import LoadStreamlitUI
 from src.agenticailanggraph.LLMs.groqllm import GroqLLM
 from src.agenticailanggraph.graphs.graph_builder import GraphBuilder
 from src.agenticailanggraph.frontend.streamlitui.DisplayResultStreamlit import DisplayResultStreamlit
@@ -20,8 +20,8 @@ def load_rag_lanaggraph_agentic_app():
    
      #Load UI
    
-     frontend=LoadStreamLitFrontend()
-     user_input=frontend.load_streamlit_frontend()
+     frontend=LoadStreamlitUI()
+     user_input=frontend.load_streamlit_ui()
      
      if not user_input:
          st.error("Error: Failed to Load user input from the frontend")

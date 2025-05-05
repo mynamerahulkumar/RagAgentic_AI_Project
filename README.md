@@ -6,11 +6,6 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-#Groq key
-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
-
-
-
 
 
 
